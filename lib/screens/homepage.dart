@@ -1,5 +1,6 @@
 import "package:flutter/material.dart" ;
 
+import "domino_four.dart";
 import "domino_two.dart";
 
 class homepage extends StatefulWidget {
@@ -122,7 +123,7 @@ class _homepageState extends State<homepage> {
       
     }
 
-  /*
+  
     void showDialogFour() { 
       showDialog( 
         context: context, 
@@ -260,7 +261,7 @@ class _homepageState extends State<homepage> {
       ); 
       
     }
- */
+ 
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width; 
@@ -325,7 +326,7 @@ class _homepageState extends State<homepage> {
                     elevation: 0, 
                   ), 
                   onPressed: () { 
-                    // showDialogFour(); 
+                    showDialogFour(); 
                   }, 
                   child: Container( 
                     height: (screenHeight * (10 / 37)), 
